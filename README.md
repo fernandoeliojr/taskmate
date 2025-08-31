@@ -1,8 +1,6 @@
 # taskmate
-TaskMate - Gerenciador de Tarefas
-
-
 TaskMate — Gerenciador de Tarefas 
+
 Bem-vindo(a)!  Este é o TaskMate, um sistema de tarefas (To‑Do) que estou desenvolvendo do zero. Vou usar esse projeto para mostrar no LinkedIn cada etapa que eu for avançando, desenvolvendo. 
  
  
@@ -30,12 +28,20 @@ Minha ideia é fazer posts no LinkedIn mostrando o andamento: - Primeiro post: A
 Objetivo principal 
 Exercitar boas práticas com C#, .NET, APIs, banco de dados e front-end. Modelagem -> API -> UI -> Deploy. 
  
-Se você chegou até aqui: valeu por acompanhar!  
+Se você chegou até aqui: valeu por acompanhar!!!
  
  
 Status do Projeto 
  
-- [x] Documentação inicial (este README) - [ ] Subir repositório no GitHub - [ ] Criar solução .NET - [ ] Implementar entidades e mapeamento EF - [ ] Criar autenticação JWT - [ ] CRUD Categorias/Tarefas - [ ] Testes - [ ] Front-end - [ ] Deploy 
- 
- 
+- [x] Documentação inicial (este README)
+- [ ] Subir repositório no GitHub
+- [ ] Criar solução .NET
+- [ ] Implementar entidades e mapeamento EF
+- [ ] Criar autenticação JWT
+- [ ] CRUD Categorias/Tarefas
+- [ ] Testes
+- [ ] Front-end
+- [ ] Deploy 
+
+  
 Licença: Projeto educacional! 
