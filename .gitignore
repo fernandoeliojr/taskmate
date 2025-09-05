@@ -1,0 +1,26 @@
+# Build
+bin/
+obj/
+out/
+
+# Configurações locais
+*.user
+*.rsuser
+*.suo
+*.vs/
+.vscode/
+
+# Arquivos de log
+*.log
+
+# Secrets
+appsettings.Development.json
+appsettings.Local.json
+
+# Sistema
+*.db
+*.sqlite
+*.pdb
+
+# Outros
+Thumbs.db
