@@ -1,0 +1,50 @@
+📌 Status atual do projeto TaskMate
+✅ Estrutura e Banco
+
+Projeto estruturado em camadas (Core, Infrastructure, API).
+
+Configuração do Entity Framework Core concluída.
+
+Migrations criadas e aplicadas (InitialCreate).
+
+Banco SQL Server criado e funcionando (DB_SistemaTarefas).
+
+✅ API
+
+Criado o Controller de Tarefas (TasksController).
+
+Implementado CRUD completo (GET, POST, PUT, DELETE).
+
+Criados os DTOs (Create, Update, Read).
+
+Adicionadas validações com DataAnnotations.
+
+Testado com Postman → todas as rotas funcionais (200, 201, 204).
+
+✅ Testes
+
+GET all → lista tarefas.
+
+POST → cria novas tarefas.
+
+GET by Id → retorna tarefa específica.
+
+PUT → atualiza tarefa existente.
+
+DELETE → exclui tarefa.
+
+🚧 Próximos passos
+
+Refatorar o Controller com AutoMapper para reduzir código repetitivo.
+
+Adicionar camada de Services/Repository para separar regras de negócio.
+
+Melhorar tratamento de erros e mensagens de resposta.
+
+Configurar Swagger com exemplos de request/response.
+
+(Opcional) Autenticação e controle de usuários.
+
+👉 Ou seja, você já pode atualizar o GitHub com um commit e uma descrição assim:
+
+"Adicionado Controller de Tarefas com DTOs, validações e CRUD completo. Banco de dados configurado e testado com Postman."
