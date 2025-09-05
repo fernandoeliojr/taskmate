@@ -1,0 +1,17 @@
+E:\Dev\taskmate\scr\TaskMate.Infrastructure\obj\Debug\net9.0\TaskMate.Infrastructure.csproj.AssemblyReference.cache
+E:\Dev\taskmate\scr\TaskMate.Infrastructure\obj\Debug\net9.0\TaskMate.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dev\taskmate\scr\TaskMate.Infrastructure\obj\Debug\net9.0\TaskMate.Infrastructure.AssemblyInfoInputs.cache
+E:\Dev\taskmate\scr\TaskMate.Infrastructure\obj\Debug\net9.0\TaskMate.Infrastructure.AssemblyInfo.cs
+E:\Dev\taskmate\scr\TaskMate.Infrastructure\obj\Debug\net9.0\TaskMate.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Dev\taskmate\scr\TaskMate.Infrastructure\bin\Debug\net9.0\TaskMate.Infrastructure.deps.json
+E:\Dev\taskmate\scr\TaskMate.Infrastructure\bin\Debug\net9.0\TaskMate.Infrastructure.runtimeconfig.json
+E:\Dev\taskmate\scr\TaskMate.Infrastructure\bin\Debug\net9.0\TaskMate.Infrastructure.dll
+E:\Dev\taskmate\scr\TaskMate.Infrastructure\bin\Debug\net9.0\TaskMate.Infrastructure.pdb
+E:\Dev\taskmate\scr\TaskMate.Infrastructure\bin\Debug\net9.0\TaskMate.Domain.dll
+E:\Dev\taskmate\scr\TaskMate.Infrastructure\bin\Debug\net9.0\TaskMate.Domain.pdb
+E:\Dev\taskmate\scr\TaskMate.Infrastructure\obj\Debug\net9.0\TaskMate.4BAD0BF9.Up2Date
+E:\Dev\taskmate\scr\TaskMate.Infrastructure\obj\Debug\net9.0\TaskMate.Infrastructure.dll
+E:\Dev\taskmate\scr\TaskMate.Infrastructure\obj\Debug\net9.0\refint\TaskMate.Infrastructure.dll
+E:\Dev\taskmate\scr\TaskMate.Infrastructure\obj\Debug\net9.0\TaskMate.Infrastructure.pdb
+E:\Dev\taskmate\scr\TaskMate.Infrastructure\obj\Debug\net9.0\TaskMate.Infrastructure.genruntimeconfig.cache
+E:\Dev\taskmate\scr\TaskMate.Infrastructure\obj\Debug\net9.0\ref\TaskMate.Infrastructure.dll

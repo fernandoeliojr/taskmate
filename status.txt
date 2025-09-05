@@ -1,0 +1,17 @@
+Etapa atual do projeto
+
+Estamos basicamente na fase de desenvolvimento da API do TaskMate, que envolve:
+
+Banco de dados (DbContext) – já criado e configurado.
+
+Modelo TaskItem – representando as tarefas (provavelmente já pronto).
+
+Controller – já começamos a criar o TasksController com CRUD.
+
+Validações e DTOs – próxima etapa, para deixar a API mais robusta e segura.
+
+Testes e documentação – usando Swagger ou Postman para validar funcionalidades.
+
+Ou seja, estamos no coração do desenvolvimento, implementando funcionalidades que serão usadas pelo usuário (no caso, o Elvis).
+
+-- 22:30 -- 01/09
