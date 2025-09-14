@@ -4,9 +4,11 @@ using TaskMate.Infrastructure.Data;
 using TaskMate.Domain.Entities;
 using TaskMate.Api.Dtos;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 
 namespace TaskMate.API.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class TasksController : ControllerBase

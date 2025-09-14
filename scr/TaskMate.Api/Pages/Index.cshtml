@@ -1,0 +1,52 @@
+@page
+@{
+    ViewData["Title"] = "Início";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">📋 Dashboard de Tarefas</h2>
+
+    <div class="row">
+        <!-- Coluna A Fazer -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-danger text-white">A Fazer</div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Estudar autenticação JWT</li>
+                        <li class="list-group-item">Criar layout moderno</li>
+                        <li class="list-group-item">Configurar conexão com banco</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coluna Em Progresso -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-warning text-dark">Em Progresso</div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Implementando Razor Pages</li>
+                        <li class="list-group-item">Organizando Controllers</li>
+                        <li class="list-group-item">Ajustando Rodapé</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coluna Concluídas -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-success text-white">Concluídas</div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Configuração JWT no Swagger</li>
+                        <li class="list-group-item">Cadastro/Login de usuários</li>
+                        <li class="list-group-item">Serviço de Hash de senha</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
