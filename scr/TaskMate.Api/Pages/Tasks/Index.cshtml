@@ -1,0 +1,37 @@
+@page
+@model TaskMate.Api.Pages.Tasks.IndexModel
+@{
+    ViewData["Title"] = "Minhas Tarefas";
+}
+
+<div class="container mt-4">
+    <h2>📋 Minhas Tarefas</h2>
+    
+
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Título</th>
+                <th>Descrição</th>
+                <th>Status</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var task in Model.Tasks)
+            {
+                <tr>
+                    <td>@task.Title</td>
+                    <td>@task.Description</td>
+                    <td>@task.Status</td>
+                    <td>
+                        <a class="btn btn-sm btn-warning" asp-page="/Tasks/Edit" asp-route-id="@task.Id">Editar</a>
+                        <a class="btn btn-sm btn-danger" asp-page="/Tasks/Delete" asp-route-id="@task.Id">Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<a class="btn btn-primary mb-3" href="/Tasks/Create">Criar Nova Tarefa</a>

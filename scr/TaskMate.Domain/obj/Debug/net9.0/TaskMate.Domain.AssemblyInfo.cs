@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TaskMate.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2c5fba889100adca021a39383afd4a5bce2c7ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaskMate.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaskMate.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

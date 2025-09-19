@@ -1,0 +1,20 @@
+@page "{id:guid}"
+@model TaskMate.Api.Pages.Tasks.DeleteModel
+@{
+    ViewData["Title"] = "Excluir Tarefa";
+}
+
+<div class="container mt-4">
+    <h2>🗑️ Excluir Tarefa</h2>
+
+    <div class="alert alert-warning" role="alert">
+        <strong>Atenção!</strong> Esta ação é irreversível. Ao confirmar, a tarefa será permanentemente excluída.
+        <h3>Tem certeza que deseja excluir esta tarefa?</h3>
+        <strong>@Model.TaskItem.Title</strong>?
+    </div>
+    <form method="post">
+        <input type="hidden" asp-for="TaskItem.Id" />
+        <button type="submit" class="btn btn-danger">Sim, excluir</button>
+        <a asp-page="./Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>

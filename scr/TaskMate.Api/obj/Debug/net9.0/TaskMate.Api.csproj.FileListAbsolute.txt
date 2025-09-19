@@ -1,5 +1,6 @@
 E:\Dev\taskmate\scr\TaskMate.Api\bin\Debug\net9.0\appsettings.Development.json
 E:\Dev\taskmate\scr\TaskMate.Api\bin\Debug\net9.0\appsettings.json
+E:\Dev\taskmate\scr\TaskMate.Api\bin\Debug\net9.0\TaskMate.Api.staticwebassets.runtime.json
 E:\Dev\taskmate\scr\TaskMate.Api\bin\Debug\net9.0\TaskMate.Api.staticwebassets.endpoints.json
 E:\Dev\taskmate\scr\TaskMate.Api\bin\Debug\net9.0\TaskMate.Api.exe
 E:\Dev\taskmate\scr\TaskMate.Api\bin\Debug\net9.0\TaskMate.Api.deps.json
@@ -177,6 +178,7 @@ E:\Dev\taskmate\scr\TaskMate.Api\obj\Debug\net9.0\rjimswa.dswa.cache.json
 E:\Dev\taskmate\scr\TaskMate.Api\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 E:\Dev\taskmate\scr\TaskMate.Api\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
 E:\Dev\taskmate\scr\TaskMate.Api\obj\Debug\net9.0\scopedcss\bundle\TaskMate.Api.styles.css
+E:\Dev\taskmate\scr\TaskMate.Api\obj\Debug\net9.0\compressed\5sp2eeucqj-vpkm2rmwkm.gz
 E:\Dev\taskmate\scr\TaskMate.Api\obj\Debug\net9.0\staticwebassets.build.json
 E:\Dev\taskmate\scr\TaskMate.Api\obj\Debug\net9.0\staticwebassets.build.json.cache
 E:\Dev\taskmate\scr\TaskMate.Api\obj\Debug\net9.0\staticwebassets.development.json
@@ -187,5 +189,3 @@ E:\Dev\taskmate\scr\TaskMate.Api\obj\Debug\net9.0\refint\TaskMate.Api.dll
 E:\Dev\taskmate\scr\TaskMate.Api\obj\Debug\net9.0\TaskMate.Api.pdb
 E:\Dev\taskmate\scr\TaskMate.Api\obj\Debug\net9.0\TaskMate.Api.genruntimeconfig.cache
 E:\Dev\taskmate\scr\TaskMate.Api\obj\Debug\net9.0\ref\TaskMate.Api.dll
-E:\Dev\taskmate\scr\TaskMate.Api\bin\Debug\net9.0\TaskMate.Api.staticwebassets.runtime.json
-E:\Dev\taskmate\scr\TaskMate.Api\obj\Debug\net9.0\compressed\5sp2eeucqj-vpkm2rmwkm.gz

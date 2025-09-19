@@ -8,6 +8,7 @@ E:\Dev\taskmate\scr\TaskMate.Application\obj\Debug\net9.0\TaskMate.Application.G
 E:\Dev\taskmate\scr\TaskMate.Application\obj\Debug\net9.0\TaskMate.Application.AssemblyInfoInputs.cache
 E:\Dev\taskmate\scr\TaskMate.Application\obj\Debug\net9.0\TaskMate.Application.AssemblyInfo.cs
 E:\Dev\taskmate\scr\TaskMate.Application\obj\Debug\net9.0\TaskMate.Application.csproj.CoreCompileInputs.cache
+E:\Dev\taskmate\scr\TaskMate.Application\obj\Debug\net9.0\TaskMate.Application.sourcelink.json
 E:\Dev\taskmate\scr\TaskMate.Application\obj\Debug\net9.0\TaskMate.1FA66940.Up2Date
 E:\Dev\taskmate\scr\TaskMate.Application\obj\Debug\net9.0\TaskMate.Application.dll
 E:\Dev\taskmate\scr\TaskMate.Application\obj\Debug\net9.0\refint\TaskMate.Application.dll

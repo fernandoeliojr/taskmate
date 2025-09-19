@@ -5,6 +5,7 @@ E:\Dev\taskmate\scr\TaskMate.Domain\obj\Debug\net9.0\TaskMate.Domain.GeneratedMS
 E:\Dev\taskmate\scr\TaskMate.Domain\obj\Debug\net9.0\TaskMate.Domain.AssemblyInfoInputs.cache
 E:\Dev\taskmate\scr\TaskMate.Domain\obj\Debug\net9.0\TaskMate.Domain.AssemblyInfo.cs
 E:\Dev\taskmate\scr\TaskMate.Domain\obj\Debug\net9.0\TaskMate.Domain.csproj.CoreCompileInputs.cache
+E:\Dev\taskmate\scr\TaskMate.Domain\obj\Debug\net9.0\TaskMate.Domain.sourcelink.json
 E:\Dev\taskmate\scr\TaskMate.Domain\obj\Debug\net9.0\TaskMate.Domain.dll
 E:\Dev\taskmate\scr\TaskMate.Domain\obj\Debug\net9.0\refint\TaskMate.Domain.dll
 E:\Dev\taskmate\scr\TaskMate.Domain\obj\Debug\net9.0\TaskMate.Domain.pdb

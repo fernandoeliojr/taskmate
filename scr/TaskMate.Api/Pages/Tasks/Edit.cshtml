@@ -1,0 +1,32 @@
+@page "{id:guid}"
+@model TaskMate.Api.Pages.Tasks.EditModel
+@{
+    ViewData["Title"] = "Editar Tarefa";
+}
+
+<div class="container mt-4">
+    <h2>✏️ Editar Tarefa</h2>
+
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="Task.Title" class="form-label">Título</label>
+            <input asp-for="Task.Title" class="form-control" />
+            <span asp-validation-for="Task.Title" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Task.Description" class="form-label">Descrição</label>
+            <textarea asp-for="Task.Description" class="form-control"></textarea>
+            <span asp-validation-for="Task.Description" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Status</label>
+            <select asp-for="Task.Status" class="form-select">
+                <option value="A Fazer">A Fazer</option>
+                <option value="Em Progresso">Em Progresso</option>
+                <option value="Concluída">Concluída</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Salvar</button>
+        <a asp-page="./Index" class="btn btn-secondary">Voltar</a>
+    </form>
+</div>

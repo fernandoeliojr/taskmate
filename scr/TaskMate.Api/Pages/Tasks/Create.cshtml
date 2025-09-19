@@ -1,0 +1,26 @@
+@page
+@model TaskMate.Api.Pages.Tasks.CreateModel
+@{
+    ViewData["Title"] = "Nova Tarefa";
+}
+
+<div class="container mt-4">
+    <h2>➕ Nova Tarefa</h2>
+
+    <form method="post">
+        <div class="mb-3">
+            <label asp-for="Task.Title" class="form-label">Título</label>
+            <input asp-for="Task.Title" class="form-control" />
+            <span asp-validation-for="Task.Title" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Task.Description" class="form-label">Descrição</label>
+            <textarea asp-for="Task.Description" class="form-control"></textarea>
+            <span asp-validation-for="Task.Description" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-success">Salvar</button>
+        <a asp-page="./Index" class="btn btn-secondary">Voltar</a>
+
+    </form>
+</div>
