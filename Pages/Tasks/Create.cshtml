@@ -1,0 +1,39 @@
+@page
+@model TaskMate.Pages.Tasks.Create
+@{
+    ViewData["Title"] = "Criar Tarefa";
+}
+
+<div class="container mt-4">
+    <h2>Criar Nova Tarefa</h2>
+
+    <form method="post">
+        <div class="mb-3">
+            <label asp-for="TaskItem.Titulo" class="form-label"></label>
+            <input asp-for="TaskItem.Titulo" class="form-control" />
+            <span asp-validation-for="TaskItem.Titulo" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="TaskItem.Descricao" class="form-label"></label>
+            <textarea asp-for="TaskItem.Descricao" class="form-control"></textarea>
+            <span asp-validation-for="TaskItem.Descricao" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="TaskItem.Status" class="form-label"></label>
+            <select asp-for="TaskItem.Status" class="form-select">
+                <option>A Fazer</option>
+                <option>Em Progresso</option>
+                <option>Concluída</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-success">Salvar</button>
+        <a asp-page="./Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

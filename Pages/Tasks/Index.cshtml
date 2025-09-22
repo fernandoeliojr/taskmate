@@ -1,0 +1,55 @@
+@page
+@model TaskMate.Pages.Tasks.Index
+@{
+    ViewData["Title"] = "Minhas Tarefas";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>📋 Minhas Tarefas</h2>
+    <a class="btn btn-primary" asp-page="./Create">Nova Tarefa</a>
+</div>
+
+@if (Model.TaskItem.Count == 0)
+{
+    <div class="alert alert-info">Nenhuma tarefa cadastrada ainda.</div>
+}
+else
+{
+    <table class="table table-hover align-middle">
+        <thead class="table-dark">
+            <tr>
+                <th>Título</th>
+                <th>Descrição</th>
+                <th>Status</th>
+                <th style="width:200px">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var task in Model.TaskItem)
+            {
+                <tr>
+                    <td>@task.Titulo</td>
+                    <td>@task.Descricao</td>
+                    <td>
+                        @if (task.Status == "Concluída")
+                        {
+                            <span class="badge bg-success">@task.Status</span>
+                        }
+                        else if (task.Status == "Em Progresso")
+                        {
+                            <span class="badge bg-warning text-dark">@task.Status</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">@task.Status</span>
+                        }
+                    </td>
+                    <td>
+                        <a class="btn btn-sm btn-warning" asp-page="./Edit" asp-route-id="@task.Id">Editar</a>
+                        <a class="btn btn-sm btn-danger" asp-page="./Delete" asp-route-id="@task.Id">Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

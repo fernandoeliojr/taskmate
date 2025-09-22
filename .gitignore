@@ -1,0 +1,12 @@
+# Arquivos de configuração
+.env
+config.json
+db_config.php
+
+# Pastas de dependências
+node_modules/
+vendor/
+img/
+
+# Arquivos de log
+*.log

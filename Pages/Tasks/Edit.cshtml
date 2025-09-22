@@ -1,0 +1,41 @@
+@page "{id:int}"
+@model TaskMate.Pages.Tasks.Edit
+@{
+    ViewData["Title"] = "Editar Tarefa";
+}
+
+<div class="container mt-4">
+    <h2>Editar Tarefa</h2>
+
+    <form method="post">
+    <input type="hidden" asp-for="TaskItem.Id" />
+
+        <div class="mb-3">
+            <label asp-for="TaskItem.Titulo" class="form-label"></label>
+            <input asp-for="TaskItem.Titulo" class="form-control" />
+            <span asp-validation-for="TaskItem.Titulo" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="TaskItem.Descricao" class="form-label"></label>
+            <textarea asp-for="TaskItem.Descricao" class="form-control"></textarea>
+            <span asp-validation-for="TaskItem.Descricao" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="TaskItem.Status" class="form-label"></label>
+            <select asp-for="TaskItem.Status" class="form-select">
+                <option value="A Fazer">A Fazer</option>
+                <option value="Em Progresso">Em Progresso</option>
+                <option value="Concluída">Concluída</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-success">Salvar</button>
+        <a asp-page="./Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

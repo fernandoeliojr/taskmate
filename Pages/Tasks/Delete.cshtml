@@ -1,0 +1,20 @@
+@page "{id:int}"
+@model TaskMate.Pages.Tasks.Delete
+@{
+    ViewData["Title"] = "Excluir Tarefa";
+}
+
+<div class="container mt-4">
+    <h2>Excluir Tarefa</h2>
+
+    <div>
+        <h5>Título: @Model.TaskItem.Titulo</h5>
+        <p>Descrição: @Model.TaskItem.Descricao</p>
+        <p>Status: @Model.TaskItem.Status</p>
+    </div>
+
+    <form method="post">
+        <button type="submit" class="btn btn-danger">Excluir</button>
+        <a asp-page="./Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
