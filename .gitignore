@@ -2,6 +2,7 @@
 .env
 config.json
 db_config.php
+appsettings.json
 
 # Pastas de dependências
 node_modules/

@@ -14,4 +14,6 @@ public class TaskItem
     public string Descricao { get; set; } = string.Empty;
 
     public string Status { get; set; } = "A fazer";
+
+    public DateTime DataCriacao { get; set; } = DateTime.Now;
 }

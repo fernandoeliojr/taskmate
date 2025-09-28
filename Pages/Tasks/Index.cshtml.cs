@@ -1,5 +1,5 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.EntityFrameworkCore;
 using TaskMate.Data;
 using TaskMate.Domain.Entities;
 
@@ -12,5 +12,40 @@ public class Index : PageModel
     public Index(TaskMateDbContext context) => _context = context;
 
     public IList<TaskItem> TaskItem { get; set; } = new List<TaskItem>();
-    public async Task OnGetAsync() => TaskItem = await _context.Tasks.ToListAsync();
+
+    [BindProperty(SupportsGet = true)]
+    public string? SearchTitulo { get; set; }
+
+    [BindProperty(SupportsGet = true)]
+    public string? SearchStatus { get; set; }
+
+    //public async Task OnGetAsync() => TaskItem = await _context.Tasks.ToListAsync();
+
+    public void OnGet()
+    {
+        var query = _context.Tasks.AsQueryable();
+
+        if (!string.IsNullOrEmpty(SearchTitulo))
+        {
+            query = query.Where(t => t.Titulo.Contains(SearchTitulo));
+        }
+
+        if (!string.IsNullOrEmpty(SearchStatus))
+        {
+            query = query.Where(t => t.Status == SearchStatus);
+        }
+
+        TaskItem = query.ToList();
+    }
+
+    public IActionResult OnPostDelete(int id)
+    {
+        var task = _context.Tasks.Find(id);
+        if (task != null)
+        {
+            _context.Tasks.Remove(task);
+            _context.SaveChanges();
+        }
+        return RedirectToPage();
+    }
 }

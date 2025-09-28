@@ -1,0 +1,22 @@
+@page "{type?}"
+@model TaskMate.Pages.Tasks.Reports
+@{
+    ViewData["Title"] = "Relatórios de Tarefas";
+}
+
+<div class="container mt-4">
+    <h2>📑 Relatórios de Tarefas</h2>
+    <p>Selecione abaixo o tipo de relatório que deseja gerar em PDF: </p>
+
+    <div class="d-flex gap-3 mt-3">
+        <a asp-page="./Reports" asp-route-type="concluidas" class="btn btn-sucess">
+            ✔️ Tarefas Concluídas (PDF)
+        </a>
+        <a asp-page="./Reports" asp-route-type="afazer" class="btn btn-secondary">
+            🕒 Tarefas A Fazer (PDF)
+        </a>
+        <a asp-page="./Reports" asp-route-type="emprogresso" class="btn btn-warning">
+            ⚡ Tarefas Em Progresso (PDF)
+        </a>
+    </div>
+</div>

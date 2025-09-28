@@ -63,3 +63,7 @@ form {
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
+
+#pesquisa.row{
+    --bs-gutter-x: 0.5rem;
+}

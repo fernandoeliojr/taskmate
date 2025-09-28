@@ -1,0 +1,43 @@
+@page
+@model TaskMate.Pages.Tasks.ReportsOptions
+@{
+    ViewData["Title"] = "Opções de Relatórios";
+}
+
+<div class="container mt-4">
+    <h2>📑 Gerar Relatório de Tarefas</h2>
+    <form method="post">
+        <div class="mb-3">
+            <label class="form-label">Tipo de Relatório</label>
+            <select asp-for="ReportType" class="form-select">
+                <option value="todos">Todas as Tarefas</option>
+                <option value="concluidas">Concluídas</option>
+                <option value="afazer">A Fazer</option>
+                <option value="emprogresso">Em Progresso</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Campos no Relatório</label><br />
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" asp-for="IncludeTitulo" />
+                <label class="form-check-label">Título</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" asp-for="IncludeDescricao" />
+                <label class="form-check-label">Descrição</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" asp-for="IncludeStatus" />
+                <label class="form-check-label">Status</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" asp-for="IncludeDataCriacao" />
+                <label class="form-check-label">Data de Criação</label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Gerar PDF</button>
+        <a asp-page="/Tasks/Index" class="btn btn-secondary">Voltar</a>
+    </form>
+</div>

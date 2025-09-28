@@ -60,6 +60,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFza3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Dev/TaskMate/Pages/Tasks/Reports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFza3NcUmVwb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Dev/TaskMate/Pages/Tasks/ReportsOptions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFza3NcUmVwb3J0c09wdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Dev/TaskMate/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
