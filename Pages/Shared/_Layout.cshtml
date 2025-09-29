@@ -21,15 +21,18 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" asp-page="/Tasks/Index">Tarefas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" asp-page="/Tasks/ReportsOptions">Relatórios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" asp-page="/Account/Login">Login</a>
-                    </li>
+                    @if(User.Identity?.IsAuthenticated ?? false)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-page="/Tasks/Index">📋 Tarefas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-page="/Tasks/ReportsOptions">📑 Relatórios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-page="/Account/Logout">🚪 Sair</a>
+                        </li>
+                    }                    
                 </ul>
             </div>
         </div>
