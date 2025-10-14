@@ -5,6 +5,7 @@ using TaskMate.Services;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
+using System.ComponentModel.DataAnnotations;
 
 namespace TaskMate.Pages.Account;
 
@@ -59,8 +60,11 @@ public class LoginModel : PageModel
 public class LoginInputModel
 {
     [BindProperty]
+    [Required(ErrorMessage = "O campo e-mail é obrigatório.")]
+    [EmailAddress(ErrorMessage = "E-mail inválido.")]
     public string Email { get; set; } = string.Empty;
 
     [BindProperty]
+    [Required(ErrorMessage = "O campo senha é obrigatório.")]
     public string Password { get; set; } = string.Empty;
 }
