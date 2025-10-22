@@ -19,4 +19,9 @@ public class User
     [MinLength(6, ErrorMessage = "A senha deve conter no mínimo 6 caracteres.")]
     public byte[] PasswordHash { get; set; } = Array.Empty<byte>();
     public byte[] PasswordSalt { get; set; } = Array.Empty<byte>();
+
+    //campo para validar se o usuário é Admin ou User
+    [Required]
+    [MaxLength(20)]
+    public string Role { get; set; } = "User";
 }

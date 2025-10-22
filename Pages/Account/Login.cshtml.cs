@@ -41,8 +41,10 @@ public class LoginModel : PageModel
         //cria identidade
         var claims = new List<Claim>
         {
-            new Claim(ClaimTypes.Name, user.Nome), //nome do usuário
+            new Claim(ClaimTypes.Name, user.Email), //nome do usuário
+            //new Claim(ClaimTypes.Name, user.Nome), //nome do usuário
             new Claim(ClaimTypes.Email, user.Email), //e-mail do usuário
+            new Claim(ClaimTypes.Role, user.Role), //role do usuário
             new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()) //ID
         };
 

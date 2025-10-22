@@ -10,7 +10,9 @@ builder.Services.AddRazorPages(options =>
 {
     options.Conventions.AuthorizeFolder("/Tasks"); //protege páginas Tasks
     options.Conventions.AuthorizeFolder("/Reports"); //protege páginas Reports
-    options.Conventions.AllowAnonymousToFolder("/Account/Login"); //login liberado
+    //options.Conventions.AllowAnonymousToFolder("/Account/Login"); //login liberado
+    options.Conventions.AllowAnonymousToPage("/Account/Login");
+    options.Conventions.AllowAnonymousToPage("/Account/Register");
 });
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
