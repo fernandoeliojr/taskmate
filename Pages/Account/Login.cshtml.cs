@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Authentication;
 using System.ComponentModel.DataAnnotations;
 
 namespace TaskMate.Pages.Account;
-
 public class LoginModel : PageModel
 {
     private readonly TaskMateDbContext _context;
@@ -41,7 +40,7 @@ public class LoginModel : PageModel
         //cria identidade
         var claims = new List<Claim>
         {
-            new Claim(ClaimTypes.Name, user.Email), //nome do usuário
+            new Claim(ClaimTypes.Name, user.Nome), //nome do usuário
             //new Claim(ClaimTypes.Name, user.Nome), //nome do usuário
             new Claim(ClaimTypes.Email, user.Email), //e-mail do usuário
             new Claim(ClaimTypes.Role, user.Role), //role do usuário
