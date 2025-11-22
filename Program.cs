@@ -8,8 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages(options =>
 {
-    options.Conventions.AuthorizeFolder("/Tasks"); //protege páginas Tasks
-    options.Conventions.AuthorizeFolder("/Reports"); //protege páginas Reports
+    options.Conventions.AuthorizeFolder("/Tasks"); //todos logados podem ver
+    options.Conventions.AuthorizeFolder("/Reports", "AdminOnly"); //só os Role = "Admin" pode ver
     //options.Conventions.AllowAnonymousToFolder("/Account/Login"); //login liberado
     options.Conventions.AllowAnonymousToPage("/Account/Login");
     options.Conventions.AllowAnonymousToPage("/Account/Register");
@@ -21,6 +21,11 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.LoginPath = "/Account/Login"; //redireciona para login
         options.LogoutPath = "/Account/Logout"; //redireciona para logout
     });
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("AdminOnly", policy => policy.RequireRole("Admin"));
+});
 
 
 // Conexão com o banco de dados
@@ -54,7 +59,8 @@ using (var scope = app.Services.CreateScope())
             Nome = "Administrador",
             Email = "admin@local",
             PasswordHash = hash,
-            PasswordSalt = salt
+            PasswordSalt = salt,
+            Role = "Admin"
         };
 
         context.Users.Add(admin);

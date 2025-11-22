@@ -1,6 +1,7 @@
 using System.Data;
 using iText.Kernel.Pdf;
 using iText.Layout.Element;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using TaskMate.Data;
@@ -8,7 +9,7 @@ using TaskMate.Domain.Entities;
 using Document = iText.Layout.Document;
 
 namespace TaskMate.Pages.Tasks;
-
+[Authorize(Roles = "Admin")]
 public class Reports : PageModel
 {
     private readonly TaskMateDbContext _context;
